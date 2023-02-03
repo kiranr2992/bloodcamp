@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Camp</title>
+
+    <!-- for slider in review... -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  --><!-- for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- --------------style switcher--------------- -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+    
+    <!-- Boxicon css-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!------------------->
+    <link rel="icon" href="images/ssimg1/logo.png" type="images/icon">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="images/ssimg1/logo.png"  alt="Blood Donation" height="70px" ></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">Organize</a>
+        <a href="#services">services</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#gallery">gallery</a>
+        <a href="#video">Video</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <div class="container">
+        <div class="button">
+            <div class="btn-login">Login</div>
+            <div class="btn-register">Register</div>
+            <div class="toggle-btn"></div>
+        </div>
+        <div class="form">
+            <div class="login">
+                <form action="user.html" method="POST"> <!-- action="log.php"  method="POST"  ///// ---- action="user.html"-----> 
+                <div class="user-box">
+                    <input type="email" name="Email" autocomplete="off" required>
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" autocomplete="off" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                Login
+                </button>
+             </form>
+                
+            </div>
+            <div class="register">
+                <form action="reg.php" method="POST"> <!-- action="reg.php" method="POST" --> <!--  action="user.html" -->
+                <div class="user-box">
+                    <input type="text" name="Username" autocomplete="off" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input autocomplete="off" type="email" name="Email" required="">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="Password" autocomplete="off" required="">
+                    <label>Password</label>
+                </div>
+                <button type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                Register
+                </button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>it takes all types!</h3>
+        <p>Giving = Living </p>
+        <a href="#book" class="btn"> BOOK NOW </a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/Blood Check - 69526.mp4"></span>
+        <span class="vid-btn" data-src="images/bloodbg4.mp4"></span>
+        <span class="vid-btn" data-src="images/Blood -3.mp4"></span>
+        <span class="vid-btn" data-src="images/Blood - 44580.mp4"></span>
+        <span class="vid-btn" data-src="images/bloodbg.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/Blood Check - 69526.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/ssimg1/hero1.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Name <b style="color: red">*</b></h3>
+                <input type="text" name="Name" autocomplete="off" placeholder="your name">
+            </div>
+            <div class="inputBox">
+                <h3>Blood Type <b style="color: red">*</b></h3>
+                <input type="text" name="Blood Type" autocomplete="off" placeholder="ex. O+">
+            </div>
+            <div class="inputBox">
+                <h3>Date</h3>
+                <input type="date" name="Date">
+            </div>
+            <div class="inputBox">
+                <h3>Phone no</h3>
+                <input type="number" name="Phone no" autocomplete="off">
+            </div>
+            <button  onclick="logalert()" class="btn">book now</button>
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>o</span>
+        <span>r</span>
+        <span>g</span>
+        <span>a</span>
+        <span>n</span>
+        <span>i</span>
+        <span>z</span>
+        <span>e</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/ssimg1/oancheli.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Mohanpur </h3>
+                <p>at PN Patel Delvadiya Memoriyal high school, Ancheli; dist: Navsari</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 24<sup>th</sup> September, 7:00 AM <br> to 2<sup>nd</sup> October, 4:30 PM</div>
+                <button onclick="logalert()" class="btn">book now</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ssimg1/oandheshwar.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Amalsad </h3>
+                <p>at Andheshwar Mahadev Sankul (396310) , dist: Navsari , Gujarat</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 2<sup>nd</sup>November, 7:30AM <br> to 7<sup>th</sup> November, 4:30 PM</div>
+                <button onclick="logalert()" class="btn">book now</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ssimg1/onred.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Navsari </h3>
+                <p>Rameshwar Apartment 1, B.K.Shah Red Cross Bhavan, Station Road, Purna Society, Soni Samaj Vadi, Udyog Nagar, Vejalpore</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 3<sup>rd</sup>October, 8:00AM <br> to 9<sup>th</sup> October, 4:30 PM </div>
+                <button onclick="logalert()" class="btn">book now</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ssimg1/obill.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Billimora </h3>
+                <p>Rotary Hall, Somnath Complex Bilimora Gujarat India ...</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 10<sup>th</sup>October, 8:00AM <br> to 16<sup>th</sup> October, 4:30 PM</div>
+                <button onclick="logalert()" class="btn">book now</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ssimg1/sgkoli.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Gandevi </h3>
+                <p>at Padmaba Nagarsheth Rotary Hall, Shubhlaxmi Row House, Gandevi-Navsari</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 21<sup>st</sup>October, 8:00AM <br> to 26<sup>th</sup> October, 4:30 PM</div>
+                <button onclick="logalert()" class="btn">book now</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ssimg1/onrot.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Navsari </h3>
+                <p>WWWH+JH3, Kashyap Gandi Rotary Hall Nutan Society, opp. Radha Krishna Temple, Chhapra, Navsari, Gujarat</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 15<sup>th</sup>November, 8:00AM <br> to 21<sup>st</sup> October, 4:30 PM</div>
+                <button onclick="logalert()" class="btn">book now</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/ssimg1/bloodstorage.jpg" alt="">
+            <div class="content">
+                <h3>Blood Storage</h3>
+                <p>We store the safest blood of all blood groups which you can use for any kind of treatments or in an emergency.</p>
+        
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/blooddonation.jpg" alt="">
+            <div class="content">
+                <h3>Blood Donation</h3>
+                <p>Donation of blood is a selfless service that we do for mankind! We allow you to save a life by donating blood to the ones who need it.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/rbc.jpg" alt="">
+            <div class="content">
+                <h3>Provision of Red Blood Cells</h3>
+                <p>Lowering the count of red blood cells could be dangerous. We also provide red blood cells for various treatments.</p>
+            </div>
+        </div><br>
+        <div class="box">
+            <img src="images/ssimg1/Platelets.png" alt="">
+            <div class="content">
+                <h3>Provision of Platelets</h3>
+                <p>Platelets play an important role in blocking the blood flow at the times of injuries. We also provide platelets to maintain its count in your blood.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/ambulance3.jpg" alt="">
+            <div class="content">
+                <h3>Ambulance</h3>
+                <p>The blood is kept in a refrigerator at the station; before each call, EMS (Emergency Medical Services) providers decide if they need to take the blood with them. If they do not use it within two weeks, it is sent back to the hospital to be used. </p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/sdoc.png" alt="">
+            <div class="content">
+                <h3>Expert Doctors</h3>
+                <p>All Healthspring Doctors come with a wealth of experience in their respective domains. Each of them with years of clinical experience having worked at hospitals, corporates or as entrepreneurs.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- About Us section starts  -->
+
+<section class="about" id="aboutus">
+
+    <h1 class="heading">
+        <span>A</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>U</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <p>The first and the most common method is when whole blood is drawn from the donor and is collected in a plastic bag that contains anticoagulants and preservatives such as sodium citrate, phosphate, dextrose or adenine. The collected blood seperated into its components (mainly the RBCs and the plasma) and stored.</p><br>
+                <p>24 × 7 system provides services to the hospitals and other users.</p><br>
+                <p>Our aim to provide prompt, economical and reliable services of the safest blood and other blood products like RBCs, platelets, etc. Offering the industry-leading, advanced technology and well-equipped inventory, we make all types of blood available for the patients and many hospitals. We contribute in saving many lives in the time of need or in an emergency.</p>
+        
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/bagb.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About Us section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/ssimg1/gblood.png" alt="">
+            <div class="content">
+                <h3>Donation of Blood</h3>
+                <p>Donate Blood. It will Save 3 lives. It's blessing for needed.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/g1.png" alt="">
+            <div class="content">
+                <h3>Blood Types</h3>
+                <p>All types of blood are here. You can donate your blood.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/g2.png" alt="">
+            <div class="content">
+                <h3>Donate Blood</h3>
+                <p>Give the gift of blood by donating blood.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/circleb.jpg" alt="">
+            <div class="content">
+                <h3>Circle of strength</h3>
+                <p>MAke a group of donor & produce the strength.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/gcamph.png" alt="">
+            <div class="content">
+                <h3>PHC hospital</h3>
+                <p>Organized blood camp at PHC hospital.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/gcamp1.png" alt="">
+            <div class="content">
+                <h3>Rotaryclub camp</h3>
+                <p>Last year blood camp at Navsari Organized by Rotaryclub</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/gcamp2.png" alt="">
+            <div class="content">
+                <h3>Andheshwar Sankul</h3>
+                <p>5th Blood camp at Andheshwar Mahadev Sankul.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/gb2.png" alt="">
+            <div class="content">
+                <h3>Blood Relation</h3>
+                <p>Give blood. Give now. Give often .</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/g5.png" alt="">
+            <div class="content">
+                <h3>Gift Blood</h3>
+                <p>Help Save a life + Give the gift of blood.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/ssimg1/gb.png" alt="">
+            <div class="content">
+                <h3>Blood bag</h3>
+                <p>Donate blood, it will be good.</p>
+            </div>
+        </div>
+        <!-- <div class="box">
+            <img src="images/ssimg1/gma.jpeg" alt="">
+            <div class="content">
+                <h3>Blood camp in Mohanpur</h3>
+                <p>big blood camp at Padardevi Sankul.</p>
+            </div>
+        </div> -->
+        
+
+    </div>
+
+</section>
+
+<!-- video section ends -->
+
+<section class="services" id="video">
+
+    <h1 class="heading">
+        <span>V</span>
+        <span>i</span>
+        <span>d</span>
+        <span>e</span>
+        <span>o</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <video width="100%" controls="controls">
+                <source src="images/v1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="box">
+            <video width="100%" controls="controls">
+                <source src="images/v2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="box">
+            <video width="100%" controls="controls">
+                <source src="images/v4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="box">
+            <video width="100%" controls="controls">
+                <source src="images/v3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</section>
+
+<!-- video section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>Hinal Patel</h3>
+                    <p>Actually this kind of help is good and this is beatify one family. Your collaboration is increases my pleasure. Blood Donation is kind of services for needed. According to me, donate blood as soon as possible. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/kiran.jpeg" alt="">
+                    <h3>Kiran Patel</h3>
+                    <p>This is a best Plateform for blood donation. I am glad for this. This website is very useful for each blood donor. It Provide satisfy result of booking. I also booked donation camp for my cousins. It will be satisfaction. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>Sonu Patel</h3>
+                    <p>Blood Donation is a best assistance for blood require person and it is blessbeatific for them family. So be a blood donor and defend household. According to me , Support this organization , it goes save lives. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/kanan.jpeg" alt="">
+                    <h3>Kanan Patel</h3>
+                    <p>Exactly , Blood Donation is a gift for needed person & It is also useful for helth. So be a blood donor. It saves three lives , it is a good thing. My suggetion is to book now for blood donation. And do one kind of help. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/ssimg1/pngwing.com (3).png" alt="">
+        </div>
+
+        <form>
+            <div class="inputBox">
+                <input type="text" autocomplete="off" placeholder="name">
+                <input type="email" autocomplete="off" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" autocomplete="off" placeholder="number">
+                <input type="text" autocomplete="off" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="message" id="" cols="30" rows="10"></textarea>
+            <button onclick="message()" type="submit" class="btn" >send message</button>
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section  -->
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/ssimg1/Logo1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/ssimg1/Blood-bank-in-EMC.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/ssimg1/img1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/ssimg1/img2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/ssimg1/img3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/ssimg1/img4.png" alt=""></div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="#book"> <i class="fas fa-chevron-right"></i> book </a>
+            <a href="#packages"> <i class="fas fa-chevron-right"></i> organize </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> services </a>
+            <a href="#aboutus"> <i class="fas fa-chevron-right"></i> about </a>
+            <a href="#gallery"> <i class="fas fa-chevron-right"></i> gallery </a>
+            <a href="#review"> <i class="fas fa-chevron-right"></i> review </a>
+            <!-- <a href="#"> <i class="fas fa-chevron-right"></i> blogs </a> -->
+        </div>
+
+        <div class="box">
+            <h3>our services</h3>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> blood care </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> message therapy </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> expert doctors </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> checkUp </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel:9313245275"> <i class="fas fa-phone"></i> +919313245275 </a>
+            <a href="https://wa.me/9313245275/?text=Hi Kiran, Whatsup"> <i class="fab fa-whatsapp"></i> +919313245275 </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=krp290902@gmail.com"> <i class="fas fa-envelope"></i> krp290902@gmail.com </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kiranr2992@gmail.com"> <i class="fas fa-envelope"></i> kiranr2992@gmail.com </a>
+            <a href="https://www.google.com/maps/place/Mohanpur,+Gujarat+396472/@20.8522209,72.9442321,15.58z/data=!4m13!1m7!3m6!1s0x3be0f102ae17665d:0xb7cc8e15204c8650!2sMohanpur,+Gujarat+396472!3b1!8m2!3d20.8549788!4d72.9467948!3m4!1s0x3be0f102ae17665d:0xb7cc8e15204c8650!8m2!3d20.8549788!4d72.9467948"> <i class="fas fa-map-marker-alt"></i> Navsari, Gujarat </a>
+            <a href="https://krp290902.github.io/Kiran_Patel/"> <i class="fas fa-earth"></i> Kiran Patel </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100053302174534"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/krp290902"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/kiran_ptl29/"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/in/kiran-patel-3b4342203/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <!-- <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a> -->
+            <a href="https://github.com/kiranr2992?tab=repositories"><i class='bx bxl-github' ></i>github</a>                  
+        </div>
+
+    </div>
+
+    <h2 class="credit"> created by <span>Kiran Patel</span> | Web developer </h2>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+
+<!-- ============Style Switcher Start============= -->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas "></i>
+    </div>
+    <h4>Theme Colours</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+<!-- ============Style Switcher end============= -->
+
+  
+<!-- =================JS Files======================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script src="js/style-switcher.js"></script>
+<script src="js/Login & Register Form.js"></script>
+
+<!-- ------------------------------------- -->
+
+<script>
+    function logalert()
+    {
+        alert("Please login your self... After login you can book");
+    }
+    function message()
+    {
+        alert("Your message is submited!!");
+    }
+</script>
+
+</body>
+</html>
